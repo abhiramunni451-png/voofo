@@ -11,7 +11,7 @@ from pathlib import Path
 
 # --- DATABASE SETUP ---
 # Render provides DATABASE_URL. If not found, it uses your provided internal URL.
-DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://vofodb_user:Y7MQfAWwEtsiHQLiGHFV7ikOI2ruTv3u@dpg-d5lm4ongi27c7390kq40-a/vofodb")
+DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://vofo_db_user:8fKZRuFjMfI4T1rg282zHkb5tUKDfPT7@dpg-d6bjni3h46gs739ao3k0-a/vofo_db")
 
 # Fix: SQLAlchemy 2.0 requires 'postgresql://' but some platforms provide 'postgres://'
 if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
